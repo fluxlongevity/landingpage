@@ -208,6 +208,30 @@
       font-weight: 700;
     }
 
+    .secondary-link {
+      display: inline-flex;
+      align-items: center;
+      gap: 10px;
+      min-height: 52px;
+      padding: 0 22px;
+      border: 1px solid var(--line);
+      border-radius: 8px;
+      color: var(--navy);
+      background: rgba(255, 255, 255, 0.62);
+      font-family: "Urbanist", system-ui, sans-serif;
+      font-size: 1rem;
+      font-weight: 700;
+      text-decoration: none;
+      box-shadow: 0 12px 24px rgba(22, 36, 60, 0.04);
+      transition: transform 180ms ease, box-shadow 180ms ease, background 180ms ease;
+    }
+
+    .secondary-link:hover {
+      transform: translateY(-2px);
+      background: var(--white);
+      box-shadow: 0 16px 32px rgba(22, 36, 60, 0.08);
+    }
+
     .social {
       display: flex;
       flex-wrap: wrap;
@@ -453,6 +477,10 @@
           <a class="primary-link" href="https://www.youtube.com/@FluxLongevity?sub_confirmation=1">
             <svg class="icon" aria-hidden="true"><use href="#icon-youtube"></use></svg>
             <span>Start Here on YouTube</span>
+          </a>
+          <a class="secondary-link" href="https://fluxlongevity.gumroad.com/subscribe" target="_blank">
+            <svg class="icon" aria-hidden="true"><use href="#icon-email"></use></svg>
+            <span>Get Free Sleep Checklist</span>
           </a>
           <span class="coming-soon">30-Day Reset coming soon</span>
         </div>
